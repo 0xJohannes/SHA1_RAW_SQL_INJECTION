@@ -14,4 +14,25 @@
 | 3133235857654965           |df22273d277b42b1bf4fc3429ea9c861ae869844       | �"'='{B��O�B���a���D  |'='   |
 | 576197079592062            |d5fa374044a0a3c07bca570744d3273d276c3511       | ��7@D���{�WD�'='l5  |'='   |
 
+#  EXAMPLE USAGE
 
+```php
+<?php
+
+...SOME CODE...
+
+function escape_sql()
+  {
+    ...sql escape...
+  }
+  
+$pass = sha1($_POST['pass'], true);
+
+$log = escape_sql($_POST'log']);
+
+$sql = "select * from tablename where password=$pass AND username=$log";
+
+
+...SOME CODE...
+?>
+```
