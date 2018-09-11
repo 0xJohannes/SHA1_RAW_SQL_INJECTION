@@ -19,7 +19,7 @@ function escape_sql()
   
 $pass = sha1($_POST['pass'], true);
 
-$log = escape_sql($_POST'log']);
+$log = escape_sql($_POST['log']);
 
 $sql = "select * from tablename where password=$pass AND username=$log";
 
