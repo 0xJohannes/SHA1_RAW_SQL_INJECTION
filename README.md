@@ -28,4 +28,4 @@ $sql = "select * from tablename where password=$pass AND username=$log";
 ```
 * The first step is to inject one of suitable hashes.
 * The second move is bruteforcing the login value i.e, (admin, 4dm1n and so on)
-* The final step is buying me a coffee :D [![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](buymeacoff.ee/Wo30ewVvi)
+* The final step is buying me a coffee :D [![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/Wo30ewVvi)
