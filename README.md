@@ -1,4 +1,4 @@
-# raw sha1 sql injection
+# raw sha1 sql injection example hashes
 
 | Hash string                | SHA1 Hash                                     | Raw output            |Query   |Author    |
 | -------------------------- |:---------------------------------------------:|:---------------------:|:------:|:--------:|
